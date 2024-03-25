@@ -1,0 +1,275 @@
+/* common css start */
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+.text-center{
+    text-align: center;
+}
+/* common css end */
+/* Nav Section Css Start */
+
+#nav{
+    background-color: #02918c;
+}
+#nav ul{
+    list-style-type: none;
+}
+#nav .container{
+    justify-content: space-between;
+    align-items: center;
+}
+#nav li a{
+    font-weight: 800;
+    line-height: 61px;
+    padding: 0 25.5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+#nav li a:hover{
+    text-decoration: underline;
+    transition: 0.2s;
+    background-color: orange;
+}
+/* Nav Section Css End*/
+/* banner section css start */
+#banner{
+    background-image:url(./MYFOLIO.banner.png);
+    height: 729px;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    display: flex;
+}
+#banner h3{
+    font-size: 30px;
+    line-height: 25px;
+    font-weight: 400;
+}
+#banner h1{
+    font-size: 68px;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    white-space: nowra
+    font-weight : 800;
+    line-height : 75px;
+}
+#banner p{
+    font-size: 18px;
+    line-height: 33px;
+}
+#banner img{
+    display:block;
+    margin: 50px auto;
+}
+#banner a{
+    font-size: 14px;
+    color: #0b1016;
+    line-height: 47px;
+    padding:10px 40px; 
+    text-transform: uppercase;
+    background-color: #cfc91d;
+    font-weight: 800;
+}
+#banner a:hover{
+    color: #ffffff;
+}
+/* Banner Section Css End */
+/* About Section Css Start */
+#about {
+    padding: 98px 0;
+}
+.section_info {
+    padding: 0 100px;
+    margin-bottom: 80px;
+}
+.section_info h2{
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+    text-transform: uppercase;
+}
+.section_info p{
+    font-size: 16px;
+    line-height: 41px;
+    color: #7e8287;
+}
+.section_info p b{
+    font-size: 23px;
+}
+.about-card {
+    width: 25%;
+    border-right:1px solid #d9dbdb;
+    color: #7e8287
+}
+.about-card:last-child {
+    border-right-color: transparent;
+}
+/* about Section Css End */
+/* service section start */
+#survices{
+    position: relative;
+}
+.survices_info h2{
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+    text-transform: uppercase;
+}
+.survices_info p{
+    font-size: 16px;
+    line-height: 41px;
+    color: #7e8287;    
+}
+#survices .content::after{
+   content: "";
+    position: absolute;
+    background: rgba(240, 240, 232, .66);
+    inset: 0;
+    z-index: -1;
+}
+#survices .content{
+    width: 50%;
+    padding: 70px 0;
+}
+#survices .survices_card{
+    width: 50%;
+    margin-top: 50px; 
+}
+#survices .survices_card_wrapper h3{
+    font-size: 16px;
+    line-height: 23px;
+    color: #7e8287;
+    margin:20px 0;
+}
+#survices .survices_card_wrapper p{
+    font-size: 11px;
+    line-height: 21px;
+    color: #7e8287;
+    width: 65%;
+    margin-left: 0;  
+}
+/* service section end */
+/* Work section start */
+#work{
+    padding-top: 50px;
+}
+#work_info{
+    padding: 50px 0;
+}
+.work_info h2{
+    font-size: 46px;
+    font-weight: 800px;
+    color: #02918c ;
+    text-transform: uppercase;
+}
+.work_info p{
+    font-size: 16px;
+    line-height: 41px;
+    color: #7e8287;
+    width: 60%;
+    margin: auto;
+}
+.work_card{
+    width: 25%;
+}
+.work_card img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.work_card{
+    position: relative;
+}
+.work_card .overlay{
+
+    position: absolute;
+    inset: 20px 30px;
+    background: #02918c79;
+    margin-top: 50px;
+    opacity: 0;
+    transition: .45s;
+}
+.work_card:hover .overlay{
+    opacity: 1;
+    margin: 0;
+}
+.work_card .overlay h4{
+    font-size: 16px;
+    line-height: 23px;
+    color: #ffffff;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    font-weight: 800;  
+}
+.work_card .overlay p{
+    font-size: 13px;
+    line-height: 21px;
+    color: #ffffff;
+    width: 68%;
+    margin: auto;
+}
+/* /* Work section end */
+/* Contact Section Start */
+.contact_form{
+    background-color: #0b1016;
+}
+.contact_form input{
+    color: #898989;
+    width: 70%;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 55px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #898989;
+  
+}
+.contact_form .sm{
+  width: 50%;  
+}
+.contact_form .lg{
+    width: 100%;  
+}
+.contact_form button{
+    color: #000;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 5px;
+    padding: 13px 60px;
+    background: #cfc91d;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 30px auto;
+    transition: .6s;
+    border:none;
+    display: block;
+}
+.contact_form button:hover{
+    color: #fff;
+    background: #02918c;
+}
+/* Contact Section end */
+
